@@ -1,0 +1,8 @@
+<h2>All Courses</h2>
+<ul>
+  {% for course in courses %}
+    <li><a href="{% url 'course_detail' course.pk %}">{{ course.title }}</a></li>
+  {% endfor %}
+</ul>
+<a href="{% url 'add_course' %}">Add Course</a>
+

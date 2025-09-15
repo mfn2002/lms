@@ -1,0 +1,7 @@
+<h2>Add Lesson to {{ course.title }}</h2>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+OAOAOA  {{ form.as_p }}
+  <button type="submit">Save Lesson</button>
+</form>
+
